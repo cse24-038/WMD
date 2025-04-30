@@ -9,28 +9,31 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #ffffff;
-      color: #333;
+      color: #eee; /* Light text for dark theme */
+      background: url('https://www.example.com/your-image.jpg') no-repeat center center fixed; /* Background image */
+      background-size: cover; /* Ensure the background covers the entire page */
+      min-height: 100vh;
+      background-color: #121212; /* Dark background */
     }
 
     header {
-      background-color: #8b0000; /* subtle red */
+      background-color: rgba(33, 33, 33, 0.8); /* Dark header */
       text-align: center;
       padding: 20px 0;
-      border-bottom: 4px solid #d4af37; /* gold */
+      border-bottom: 4px solid #d4af37; /* Gold border for contrast */
     }
 
     .company-name {
       font-size: 2.5em;
       font-weight: bold;
-      color: #ffffff;
+      color: #fff; /* White text */
       margin-bottom: 10px;
     }
 
     nav {
-      background-color: #ffffff;
-      border-top: 2px solid #d4af37;
-      border-bottom: 2px solid #d4af37;
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark navigation */
+      border-top: 2px solid #d4af37; /* Gold border */
+      border-bottom: 2px solid #d4af37; /* Gold border */
     }
 
     .nav-links {
@@ -48,7 +51,7 @@
 
     .nav-links a {
       text-decoration: none;
-      color: #8b0000;
+      color: #d4af37; /* Gold links */
       font-weight: 500;
       padding: 15px 0;
       display: inline-block;
@@ -56,22 +59,25 @@
     }
 
     .nav-links a:hover {
-      color: #d4af37; /* gold hover */
+      color: #fff; /* White on hover */
     }
 
     section {
       padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
+      background: rgba(33, 33, 33, 0.8); /* Semi-transparent dark background for sections */
+      color: #fff; /* Light text for sections */
+      border-radius: 8px;
     }
 
     section h1, section h2 {
-      color: #8b0000;
+      color: #d4af37; /* Gold headings for contrast */
     }
 
     footer {
-      background-color: #8b0000;
-      color: #fff;
+      background-color: #121212; /* Dark footer */
+      color: #fff; /* White text in footer */
       text-align: center;
       padding: 20px 0;
       margin-top: 40px;
@@ -105,7 +111,6 @@
     <h2>About Us</h2>
     <p>Gees Food Catering is a premier catering company offering diverse and personalized culinary experiences for every occasion. Our passion is bringing people together through food that’s as beautiful as it is delicious.</p>
   </section>
-
 
   <section id="contact">
     <h2>Contact Us</h2>
