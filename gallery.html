@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Gees Food Catering</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #1e1e1e;
+      color: #fff;
+      text-align: center;
+    }
+
+    h1 {
+      color: #d4af37;
+      padding: 20px;
+    }
+
+    .slideshow {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    footer {
+      margin-top: 20px;
+      padding: 10px;
+      background: #111;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Gallery</h1>
+
+  <div class="slideshow">
+    <div class="slide">
+      <img src="https://source.unsplash.com/700x400/?catering,event" alt="Event" />
+    </div>
+    <div class="slide">
+      <img src="https://source.unsplash.com/700x400/?food,table" alt="Setup" />
+    </div>
+    <div class="slide">
+      <img src="https://source.unsplash.com/700x400/?chef,team" alt="Team" />
+    </div>
+  </div>
+
+  <footer>&copy; 2025 Gees Food Catering</footer>
+
+  <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlides() {
+      slides.forEach((s, i) => s.style.display = i === slideIndex ? 'block' : 'none');
+      slideIndex = (slideIndex + 1) % slides.length;
+    }
+
+    setInterval(showSlides, 3000);
+    showSlides();
+  </script>
+
+</body>
+</html>
